@@ -17,46 +17,133 @@
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
     <style media="screen">
 
+    .bg{
+      background-image: url("img/milk.jpg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      padding: inherit;
+    }
+
+    .moon {
+      background-image: url("img/moonhanging.png");
+      width:320px;
+      height: 317px;
+      transform-origin: 0 0;
+      transform: rotateZ(45deg);
+    }
+
+    .moon:hover {
+    animation:swivel 1s ease-in-out infinite alternate;
+
+    }
+
+    .planet {
+      background-image: url("img/planet.png");
+      width:212px;
+      height: 206px;
+      transform-origin: 0 0;
+      transform: rotateZ(45deg);
+    }
+    .planet:hover {
+    animation:swivel .8s ease-in-out infinite alternate;
+
+    }
+
+
+    .box {
+      width:100px;
+      height:317px;
+      margin:0 auto;
+      margin-top:3em;
+      -webkit-perspective: 40em;
+    }
+
+    .box1 {
+      width:500px;
+      height:211px;
+      margin:0 auto;
+      margin-top:0;
+      margin-right: 10em;
+      -webkit-perspective: 40em;
+    }
+
+    .star {
+      background-image: url("img/starhang.png");
+      width:211px;
+      height: 211px;
+      transform-origin: 0 0;
+      transform: rotateZ(45deg);
+    }
+    .star:hover {
+    animation:swivel .5s ease-in-out infinite alternate;
+
+    }
+
+    .box2 {
+      width:500px;
+      height:211px;
+      margin:0 auto;
+      margin-top:-20em;
+      -webkit-perspective: 40em;
+    }
+
+    .box3 {
+      width: 100px;
+      height: 211px;
+      margin:0 auto;
+      margin-top:0;
+      -webkit-perspective: 40em;
+    }
+
+    .box4 {
+      width: 100px;
+      height: 211px;
+      margin:0 auto;
+      margin-right: 38em;
+      margin-top: -40em;
+      -webkit-perspective: 40em;
+    }
+
+    .boxr {
+      width: 100px;
+      height: 211px;
+      margin:0 auto;
+      margin-right: 25em;
+      margin-top: -20em;
+      -webkit-perspective: 40em;
+    }
+
+    .box5 {
+      width: 100px;
+      height: 211px;
+      padding: inherit;
+      margin:0 auto;
+      margin-left: 30em;
+      margin-top: 15em;
+      -webkit-perspective: 40em;
+    }
+
+    .box6 {
+      width: 100px;
+      height: 211px;
+      margin:0 auto;
+      margin-left: 20em;
+      margin-bottom: 25em
+      -webkit-perspective: 40em;
+    }
+
+    @keyframes swivel {
+      from { -webkit-transform: rotateZ(45deg);}
+      to {-webkit-transform: rotateZ(50deg);}
+    }
 
 
 
-      #bounce
-      {
-        background: red;
-        height: 100px;
-        width: 100px;
-        border-radius: 500%;
-
-        position: relative;
-        left: 100px;
-        top: 100px;
-
-        animation-name: bouncethat;
-        animation-duration: 2s;
-        animation-timing-function: ease;
-        animation-iteration-count: infinite;
-
-      }
-
-      #bounce:hover
-      {
-        animation-name: swivel;
-        animation-duration: 3s;
-        animation-timing-function: linear;
-        animation-iteration-count: infinite;
-      }
-
-      @keyframes bouncethat
-      {
-        0%{top: 100px;}
-        50%{top: 200px;}
-        100%{top: 100px;}
-      }
 
 
     </style>
   </head>
-  <body>
+  <body class="bg">
     <div class="row"><!--/////////ROW 1/////////-->
       <div class="large-12 columns vspace line">
         <h1> Animations </h1>
@@ -71,11 +158,61 @@
       </div>
     </div>
 
-    <div id="bounce">
+    <div class="box">
+      <div class="moon">
 
+      </div>
     </div>
 
+    <div class="box1">
+      <div class="star">
 
+      </div>
+    </div>
+
+    <div class="box2">
+      <div class="star">
+
+      </div>
+    </div>
+
+    <div class="box3">
+      <div class="star">
+
+      </div>
+    </div>
+
+    <div class="box4">
+      <div class="planet">
+
+      </div>
+    </div>
+
+    <div class="boxr">
+      <div class="star">
+
+      </div>
+    </div>
+
+    <p></p>
+
+    <div class="box5">
+      <div class="planet">
+
+      </div>
+    </div>
+
+    <div class="box6">
+      <div class="star">
+
+      </div>
+    </div>
+
+    <p></p>
+
+
+
+    </div>
     <script src="js/vendor/jquery.js"></script>
     <script src="js/vendor/what-input.js"></script>
     <script src="js/vendor/foundation.js"></script>
