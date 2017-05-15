@@ -15,46 +15,7 @@
     <link rel="stylesheet" href="css/anim.css"/>
 
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
-    <style media="screen">
 
-
-
-
-      #bounce
-      {
-        background: red;
-        height: 100px;
-        width: 100px;
-        border-radius: 500%;
-
-        position: relative;
-        left: 100px;
-        top: 100px;
-
-        animation-name: bouncethat;
-        animation-duration: 2s;
-        animation-timing-function: ease;
-        animation-iteration-count: infinite;
-
-      }
-
-      #bounce:hover
-      {
-        animation-name: swivel;
-        animation-duration: 3s;
-        animation-timing-function: linear;
-        animation-iteration-count: infinite;
-      }
-
-      @keyframes bouncethat
-      {
-        0%{top: 100px;}
-        50%{top: 200px;}
-        100%{top: 100px;}
-      }
-
-
-    </style>
   </head>
   <body>
     <div class="row"><!--/////////ROW 1/////////-->
@@ -71,9 +32,11 @@
       </div>
     </div>
 
-    <div id="bounce">
 
-    </div>
+      <div id="moon">
+        <img class="bottom" src="img/moon.jpg"/>
+        <img class="top" src="img/eyes.jpg" />
+      </div>
 
 
     <script src="js/vendor/jquery.js"></script>
